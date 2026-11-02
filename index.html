@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rhoel's Cube Patrol | Learn to Speedcube</title>
+
+    <meta name="description"
+        content="Learn Rubik's Cube algorithms, CFOP, ZZ, Roux, and 3x3x3 solving techniques.">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#home" class="logo">
+            <span class="logo-icon">R</span>
+            <span>Rhoel's <b>Cube Patrol</b></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">☰</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#methods">Methods</a>
+            <a href="#algorithms">Algorithms</a>
+            <a href="#notation">Notation</a>
+        </nav>
+
+        <a href="#algorithms" class="nav-button">Start Learning ↗</a>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="eyebrow">
+                    <span class="status-dot"></span>
+                    YOUR SPEEDCUBING JOURNEY STARTS HERE
+                </div>
+
+                <h1>
+                    Learn the Moves.<br>
+                    <span class="gradient-text">Master the Cube.</span>
+                </h1>
+
+                <p class="hero-description">
+                    From your first algorithm to advanced speedsolving,
+                    discover CFOP, ZZ, Roux, and the techniques that
+                    help you solve smarter and faster.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#methods" class="button primary">
+                        Explore Methods <span>→</span>
+                    </a>
+
+                    <a href="#algorithms" class="button secondary">
+                        Browse Algorithms
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>3×3×3</strong>
+                        <span>The Classic Cube</span>
+                    </div>
+
+                    <div>
+                        <strong>3</strong>
+                        <span>Main Methods</span>
+                    </div>
+
+                    <div>
+                        <strong>∞</strong>
+                        <span>Room to Improve</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="cube-stage">
+                    <div class="cube-art" aria-label="Colorful Rubik's Cube illustration">
+                        <div class="cube-face face-top">
+                            <span></span><span></span><span></span>
+                            <span></span><span></span><span></span>
+                            <span></span><span></span><span></span>
+                        </div>
+
+                        <div class="cube-face face-front">
+                            <span></span><span></span><span></span>
+                            <span></span><span></span><span></span>
+                            <span></span><span></span><span></span>
+                        </div>
+
+                        <div class="cube-face face-right">
+                            <span></span><span></span><span></span>
+                            <span></span><span></span><span></span>
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floating-card float-top">
+                    <span class="mini-color blue"></span>
+                    <div>
+                        <strong>CFOP</strong>
+                        <small>Layer by layer</small>
+                    </div>
+                </div>
+
+                <div class="floating-card float-bottom">
+                    <span class="mini-color green"></span>
+                    <div>
+                        <strong>Keep Practicing!</strong>
+                        <small>Every move counts.</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="learning-strip">
+            <div class="learning-item">
+                <span class="learning-icon icon-orange">01</span>
+                <div>
+                    <strong>Understand</strong>
+                    <p>Learn cube notation</p>
+                </div>
+            </div>
+
+            <div class="learning-item">
+                <span class="learning-icon icon-blue">02</span>
+                <div>
+                    <strong>Memorize</strong>
+                    <p>Study useful algorithms</p>
+                </div>
+            </div>
+
+            <div class="learning-item">
+                <span class="learning-icon icon-green">03</span>
+                <div>
+                    <strong>Practice</strong>
+                    <p>Build speed and consistency</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section methods-section" id="methods">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">CHOOSE YOUR PATH</span>
+                    <h2>Three Ways to Solve</h2>
+                    <p>
+                        Different approaches, one goal:
+                        solving the 3×3×3 cube efficiently.
+                    </p>
+                </div>
+            </div>
+
+            <div class="method-grid">
+
+                <article class="method-card cfop-card">
+                    <div class="method-top">
+                        <span class="method-number">01 / POPULAR</span>
+                        <span class="method-symbol">✦</span>
+                    </div>
+
+                    <div class="method-logo cfop-logo">CFOP</div>
+
+                    <h3>Cross, F2L, OLL, PLL</h3>
+
+                    <p>
+                        A widely used speedsolving method that solves
+                        the cross, pairs first and second-layer pieces,
+                        orients the last layer, and permutes the last layer.
+                    </p>
+
+                    <div class="method-tags">
+                        <span>Cross</span>
+                        <span>F2L</span>
+                        <span>OLL</span>
+                        <span>PLL</span>
+                    </div>
+
+                    <a href="#algorithms" class="method-link">
+                        Explore CFOP <span>→</span>
+                    </a>
+                </article>
+
+                <article class="method-card zz-card">
+                    <div class="method-top">
+                        <span class="method-number">02 / EFFICIENCY</span>
+                        <span class="method-symbol">◇</span>
+                    </div>
+
+                    <div class="method-logo zz-logo">ZZ</div>
+
+                    <h3>Orient and Solve</h3>
+
+                    <p>
+                        ZZ begins by orienting edges during EOline,
+                        then builds blocks and finishes the remaining
+                        pieces using an efficient last-layer approach.
+                    </p>
+
+                    <div class="method-tags">
+                        <span>EOline</span>
+                        <span>Blocks</span>
+                        <span>Last Layer</span>
+                    </div>
+
+                    <a href="#algorithms" class="method-link">
+                        Explore ZZ <span>→</span>
+                    </a>
+                </article>
+
+                <article class="method-card roux-card">
+                    <div class="method-top">
+                        <span class="method-number">03 / BLOCKBUILDING</span>
+                        <span class="method-symbol">⬡</span>
+                    </div>
+
+                    <div class="method-logo roux-logo">ROUX</div>
+
+                    <h3>Blocks, CMLL, LSE</h3>
+
+                    <p>
+                        Roux builds two 1×2×3 blocks, solves the corners
+                        of the last layer, then completes the last six
+                        edges using slice moves and efficient turns.
+                    </p>
+
+                    <div class="method-tags">
+                        <span>Blocks</span>
+                        <span>CMLL</span>
+                        <span>LSE</span>
+                    </div>
+
+                    <a href="#algorithms" class="method-link">
+                        Explore Roux <span>→</span>
+                    </a>
+                </article>
+
+                <article class="method-card zbll-card">
+                    <div class="method-top">
+                        <span class="method-number">04 / ADVANCED</span>
+                        <span class="method-symbol">✧</span>
+                    </div>
+                    <div class="method-logo zbll-logo">ZBLL</div>
+                    <h3>One-look Last Layer</h3>
+                    <p>ZBLL solves the entire last layer in one algorithm after the edges are oriented. It is an advanced, case-heavy set.</p>
+                    <div class="method-tags"><span>493 Cases</span><span>Advanced</span><span>Recognition</span></div>
+                    <a href="#algorithms" class="method-link">Explore library notes <span>→</span></a>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="section algorithms-section" id="algorithms">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">YOUR PRACTICE TOOLKIT</span>
+                    <h2>Algorithm Library</h2>
+                    <p>
+                        Search common 3×3×3 algorithms and copy
+                        the notation for your practice sessions.
+                    </p>
+                </div>
+
+                <span class="library-count" id="result-count" aria-live="polite">Loading algorithms…</span>
+            </div>
+
+            <div class="library-toolbar">
+                <div class="search-box">
+                    <span>⌕</span>
+                    <input
+                        type="search"
+                        id="algorithmSearch"
+                        placeholder="Search algorithms, methods, or notation..."
+                        aria-label="Search algorithms"
+                    >
+                </div>
+
+                <label class="category-filter">
+                    <span>Category</span>
+                    <select id="categoryFilter" aria-label="Filter by algorithm category">
+                        <option value="all">All categories</option>
+                        <option value="OLL">OLL</option>
+                        <option value="PLL">PLL</option>
+                        <option value="F2L">F2L / Triggers</option>
+                        <option value="CMLL">CMLL (Roux)</option>
+                        <option value="COLL">COLL (ZZ)</option>
+                    </select>
+                </label>
+                <div class="filter-buttons" aria-label="Filter algorithms by method">
+                    <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter-btn" type="button" data-filter="CFOP" aria-pressed="false">CFOP</button>
+                    <button class="filter-btn" type="button" data-filter="ZZ" aria-pressed="false">ZZ</button>
+                    <button class="filter-btn" type="button" data-filter="Roux" aria-pressed="false">Roux</button>
+                    <button class="filter-btn" type="button" data-filter="ZBLL" aria-pressed="false">ZBLL</button>
+                </div>
+            </div>
+
+            <div class="algorithm-grid" id="algorithm-grid" aria-live="polite"></div>
+
+            <noscript><p class="library-note">
+                Every sequence here was checked in a cube simulator. OLL (57) and PLL (21) are the standard sets. F2L (41 cases, front-right slot), CMLL (42) and COLL were generated by search as the shortest verified sequence found, so they are correct but may differ from the alg you see most often. Full ZBLL (493 cases) is not included yet.
+            </p>
+            <div class="method-notes">
+                <article class="method-note"><strong>ZZ</strong><p>EOline is planned from the scramble, so there is no single EOline algorithm to copy. COLL and EPLL are included; ZBLS and ZBLL are not yet. COLL covers 37 of 42 corner cases.</p></article>
+                <article class="method-note"><strong>Roux</strong><p>All 42 CMLL cases are included. They leave the edges for LSE, which is mostly M and U moves worked out case by case, so it is not listed as algorithms.</p></article>
+                <article class="method-note"><strong>ZBLL</strong><p>ZBLL has 493 cases, mostly 12 to 16 move algorithms. They need a vetted source to avoid typos, so none are listed rather than guessing.</p></article>
+            </div>
+            </section>
+
+        <section class="section notation-section" id="notation">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">THE LANGUAGE OF CUBING</span>
+                    <h2>Master the Notation</h2>
+                    <p>
+                        Learn how to read algorithms before memorizing them.
+                    </p>
+                </div>
+            </div>
+
+            <div class="notation-grid">
+                <article class="notation-card">
+                    <div class="notation-letter letter-white">R</div>
+                    <div>
+                        <h3>Right</h3>
+                        <p>Turn the right face clockwise.</p>
+                    </div>
+                </article>
+
+                <article class="notation-card">
+                    <div class="notation-letter letter-yellow">U</div>
+                    <div>
+                        <h3>Up</h3>
+                        <p>Turn the top face clockwise.</p>
+                    </div>
+                </article>
+
+                <article class="notation-card">
+                    <div class="notation-letter letter-red">F</div>
+                    <div>
+                        <h3>Front</h3>
+                        <p>Turn the front face clockwise.</p>
+                    </div>
+                </article>
+
+                <article class="notation-card">
+                    <div class="notation-letter letter-orange">L</div>
+                    <div>
+                        <h3>Left</h3>
+                        <p>Turn the left face clockwise.</p>
+                    </div>
+                </article>
+
+                <article class="notation-card">
+                    <div class="notation-letter letter-blue">D</div>
+                    <div>
+                        <h3>Down</h3>
+                        <p>Turn the bottom face clockwise.</p>
+                    </div>
+                </article>
+
+                <article class="notation-card">
+                    <div class="notation-letter letter-green">B</div>
+                    <div>
+                        <h3>Back</h3>
+                        <p>Turn the back face clockwise.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="notation-explainer">
+                <div class="notation-example">
+                    <span class="example-move">R</span>
+                    <div>
+                        <strong>Clockwise</strong>
+                        <p>A normal face turn, viewed directly at that face.</p>
+                    </div>
+                </div>
+
+                <div class="notation-example">
+                    <span class="example-move">R'</span>
+                    <div>
+                        <strong>Counterclockwise</strong>
+                        <p>An apostrophe means turn that face the opposite way.</p>
+                    </div>
+                </div>
+
+                <div class="notation-example">
+                    <span class="example-move">R2</span>
+                    <div>
+                        <strong>Half turn</strong>
+                        <p>The face turns 180 degrees.</p>
+                    </div>
+                </div>
+
+                <div class="notation-example">
+                    <span class="example-move">M</span>
+                    <div>
+                        <strong>Middle slice</strong>
+                        <p>The middle slice between the left and right faces.</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="notation-tip">
+                Remember: clockwise and counterclockwise are defined
+                as if you were looking directly at the face being turned.
+            </p>
+        </section>
+
+        <!-- Final call to action -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <span class="section-label">EVERY SOLVER STARTS SOMEWHERE</span>
+                <h2>Your Next Solve Starts <span>Now.</span></h2>
+                <p>
+                    Pick a method, learn a few algorithms, and practice
+                    until the moves become second nature.
+                </p>
+                <a href="#algorithms" class="button primary">
+                    Start Practicing ↗
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="logo">
+            <span class="logo-icon">R</span>
+            <span>Rhoel's <b>Cube Patrol</b></span>
+        </a>
+
+        <p>Learn the moves. Master the cube.</p>
+
+        <p class="copyright">
+            © 2026 Rhoel's Cube Patrol. Made for cubers.
+        </p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
